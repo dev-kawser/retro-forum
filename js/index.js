@@ -123,8 +123,9 @@ const handleSearch = () => {
   setTimeout(() => {
     loader.classList.add('hidden')
   }, 2000);
-  
+
 }
+
 
 allPost('comedy');
 
