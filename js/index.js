@@ -77,7 +77,7 @@ let postArr = [];
 const countBox = async (item) => {
 
 
-  
+
   inboxSpan++;
 
 
@@ -117,6 +117,7 @@ const handleSearch = () => {
   const searchField = document.getElementById('search-value');
   const searchText = searchField.value;
   allPost(searchText);
+  
   const loader = document.getElementById('loading');
   loader.classList.remove('hidden')
   setTimeout(() => {
