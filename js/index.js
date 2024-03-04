@@ -8,10 +8,10 @@ let inboxSpan = 0;
 
 
 const loader = document.getElementById('loading');
-  loader.classList.remove('hidden')
-  setTimeout(() => {
-    loader.classList.add('hidden')
-  }, 2000);
+loader.classList.remove('hidden')
+setTimeout(() => {
+  loader.classList.add('hidden')
+}, 2000);
 
 
 
@@ -75,9 +75,9 @@ const allPost = async (searchText) => {
 let postArr = [];
 
 const countBox = async (item) => {
-  
+
   inboxSpan++;
-  
+
   const response = await fetch('https://openapi.programming-hero.com/api/retro-forum/posts')
   const data = await response.json();
   postArr.push(parseInt(item))
