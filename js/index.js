@@ -34,7 +34,7 @@ const allPost = async (searchText) => {
       </div>
             <div class="space-y-5">
               <div class="flex gap-5">
-                <p># ${item.category}</p>
+                <p>${item.id}: ${item.category}</p>
                 <p>Author: ${item.author.name}</p>
               </div>
               <h3 id="card-title" class="text-xl font-extrabold">${item.title}</h3>
