@@ -117,12 +117,13 @@ const handleSearch = () => {
   const searchField = document.getElementById('search-value');
   const searchText = searchField.value;
   allPost(searchText);
-  
+
   const loader = document.getElementById('loading');
   loader.classList.remove('hidden')
   setTimeout(() => {
     loader.classList.add('hidden')
   }, 2000);
+  
 }
 
 allPost('comedy');
