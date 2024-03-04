@@ -75,13 +75,15 @@ const allPost = async (searchText) => {
 let postArr = [];
 
 const countBox = async (item) => {
+  
+  inboxSpan++;
+  
   const response = await fetch('https://openapi.programming-hero.com/api/retro-forum/posts')
   const data = await response.json();
   postArr.push(parseInt(item))
   const filteredArray = data?.posts?.filter(item => postArr.includes(item.id));
 
 
-  inboxSpan++;
 
   document.getElementById('inbox-count').innerText = inboxSpan;
 
