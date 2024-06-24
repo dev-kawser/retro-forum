@@ -116,6 +116,7 @@ const countBox = async (item) => {
 const handleSearch = () => {
   const searchField = document.getElementById('search-value');
   const searchText = searchField.value;
+  searchField.value = ''
   allPost(searchText);
 
   const loader = document.getElementById('loading');
